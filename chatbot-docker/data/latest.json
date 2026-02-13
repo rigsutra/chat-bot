@@ -1,0 +1,341 @@
+{
+  "dashboard_summary": {
+    "siteLoad": 0,
+    "totalSitesCapacity": 266.0,
+    "itLoad": 10321.37,
+    "coolingLoad": 7282.82,
+    "todayMarketCarbonFactor": 5,
+    "todayLocationCarbonFactor": 2
+  },
+  "active_sites": {
+    "activeSites": 15
+  },
+  "map": [
+    {
+      "id": 1,
+      "siteName": "NDHR1",
+      "latLong": [
+        52.35,
+        5.06
+      ],
+      "siteUrl": "https://sandbox.yondrverse.com/",
+      "city": "",
+      "maxMw": 200.0,
+      "mwUsage": 34.39,
+      "currentPUE": 5.82,
+      "currentDCIE": 17.2,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": 93.0,
+      "temperature": "2.43"
+    },
+    {
+      "id": 2,
+      "siteName": "LON1A",
+      "latLong": [
+        51.51,
+        -0.57
+      ],
+      "siteUrl": "https://1xota-sandbox.yondrone.com/",
+      "city": "",
+      "maxMw": null,
+      "mwUsage": null,
+      "currentPUE": null,
+      "currentDCIE": null,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    },
+    {
+      "id": 3,
+      "siteName": "FRA1",
+      "latLong": [
+        49.99,
+        8.33
+      ],
+      "siteUrl": "https://1xota-sandbox.yondrone.com/",
+      "city": "",
+      "maxMw": 200.0,
+      "mwUsage": 100.0,
+      "currentPUE": 2.0,
+      "currentDCIE": 50.0,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    },
+    {
+      "id": 4,
+      "siteName": "JHB1A",
+      "latLong": [
+        1.54,
+        103.55
+      ],
+      "siteUrl": "https://jxh8yap-sand.yondrone.com/",
+      "city": "",
+      "maxMw": 27.45,
+      "mwUsage": 477311.24,
+      "currentPUE": 0.0,
+      "currentDCIE": 1738838.77,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    },
+    {
+      "id": 5,
+      "siteName": "NOV1A",
+      "latLong": [
+        38.75,
+        -77.87
+      ],
+      "siteUrl": "https://gkqtfrz7-sand.yondrone.com/",
+      "city": "poipoi",
+      "maxMw": null,
+      "mwUsage": null,
+      "currentPUE": null,
+      "currentDCIE": null,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    },
+    {
+      "id": 48,
+      "siteName": "LON1B",
+      "latLong": [
+        51.51,
+        0.12
+      ],
+      "siteUrl": "https://1xota-core-v2.yondrone.com/LON1B",
+      "city": "London",
+      "maxMw": 200.0,
+      "mwUsage": 100.0,
+      "currentPUE": 2.0,
+      "currentDCIE": 50.0,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    },
+    {
+      "id": 49,
+      "siteName": "JHB1S",
+      "latLong": [
+        1.4655,
+        103.7578
+      ],
+      "siteUrl": "https://jxh8yap-core-v2.yondrone.com/JHB1S",
+      "city": null,
+      "maxMw": null,
+      "mwUsage": null,
+      "currentPUE": null,
+      "currentDCIE": null,
+      "currentCarbon": 0.0,
+      "power": 0.0,
+      "humidity": null,
+      "temperature": null
+    }
+  ],
+  "sites": {
+    "sites": [
+      {
+        "siteId": 1,
+        "name": "NDHR1",
+        "description": null,
+        "city": "",
+        "latitude": 52.35,
+        "longitude": 5.06,
+        "timeZone": "UTC",
+        "currency": "EUR",
+        "siteStatus": "Design",
+        "siteURL": "https://sandbox.yondrverse.com/",
+        "country": "Netherland"
+      },
+      {
+        "siteId": 2,
+        "name": "LON1A",
+        "description": null,
+        "city": "",
+        "latitude": 51.51,
+        "longitude": -0.57,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": "Construction",
+        "siteURL": "https://1xota-sandbox.yondrone.com/",
+        "country": "UK"
+      },
+      {
+        "siteId": 3,
+        "name": "FRA1",
+        "description": "",
+        "city": "",
+        "latitude": 49.99,
+        "longitude": 8.33,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": null,
+        "siteURL": "https://1xota-sandbox.yondrone.com/",
+        "country": "Germany"
+      },
+      {
+        "siteId": 4,
+        "name": "JHB1A",
+        "description": "",
+        "city": "",
+        "latitude": 1.54,
+        "longitude": 103.55,
+        "timeZone": "UTC",
+        "currency": "USD",
+        "siteStatus": null,
+        "siteURL": "https://jxh8yap-sand.yondrone.com/",
+        "country": "Malaysia"
+      },
+      {
+        "siteId": 5,
+        "name": "NOV1A",
+        "description": "abc",
+        "city": "poipoi",
+        "latitude": 38.75,
+        "longitude": -77.87,
+        "timeZone": "UTC",
+        "currency": "EUR",
+        "siteStatus": "Operational",
+        "siteURL": "https://gkqtfrz7-sand.yondrone.com/",
+        "country": "USA"
+      },
+      {
+        "siteId": 48,
+        "name": "LON1B",
+        "description": null,
+        "city": "London",
+        "latitude": 51.51,
+        "longitude": 0.12,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": "Construction",
+        "siteURL": "https://1xota-core-v2.yondrone.com/LON1B",
+        "country": "UK"
+      },
+      {
+        "siteId": 49,
+        "name": "JHB1S",
+        "description": null,
+        "city": null,
+        "latitude": 1.4655,
+        "longitude": 103.7578,
+        "timeZone": "UTC",
+        "currency": "MYR",
+        "siteStatus": null,
+        "siteURL": "https://jxh8yap-core-v2.yondrone.com/JHB1S",
+        "country": "Malaysia"
+      },
+      {
+        "siteId": 54,
+        "name": "TEST1",
+        "description": null,
+        "city": "",
+        "latitude": 33.8623,
+        "longitude": 151.2077,
+        "timeZone": "UTC",
+        "currency": "MYR",
+        "siteStatus": "Construction",
+        "siteURL": "https://global-uat.yondrone.com",
+        "country": null
+      },
+      {
+        "siteId": 56,
+        "name": "NEW1",
+        "description": null,
+        "city": "",
+        "latitude": 4.5709,
+        "longitude": 74.2973,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": "Design",
+        "siteURL": "https://global-dev.yondrone.com/",
+        "country": null
+      },
+      {
+        "siteId": 57,
+        "name": "AIZ1",
+        "description": null,
+        "city": "",
+        "latitude": 23.7307,
+        "longitude": 92.7173,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": "Design",
+        "siteURL": "https://global-uat.yondrone.com",
+        "country": null
+      },
+      {
+        "siteId": 58,
+        "name": "TES1",
+        "description": null,
+        "city": "test site",
+        "latitude": 36.7783,
+        "longitude": 119.4179,
+        "timeZone": "UTC",
+        "currency": "EUR",
+        "siteStatus": "Construction",
+        "siteURL": "https://global-dev.yondrone.com/",
+        "country": null
+      },
+      {
+        "siteId": 59,
+        "name": "TENW1",
+        "description": null,
+        "city": "",
+        "latitude": 40.7128,
+        "longitude": 74.006,
+        "timeZone": "UTC",
+        "currency": "MYR",
+        "siteStatus": "Design",
+        "siteURL": "https://global-uat.yondrone.com",
+        "country": null
+      },
+      {
+        "siteId": 60,
+        "name": "FRA2",
+        "description": null,
+        "city": "",
+        "latitude": 34.0549,
+        "longitude": 118.2426,
+        "timeZone": "UTC",
+        "currency": "GBP",
+        "siteStatus": "Construction",
+        "siteURL": "https://global-dev.yondrone.com/",
+        "country": null
+      },
+      {
+        "siteId": 61,
+        "name": "TestSite",
+        "description": null,
+        "city": "Bras\u00edlia",
+        "latitude": 15.79,
+        "longitude": 47.79,
+        "timeZone": "UTC",
+        "currency": "VND",
+        "siteStatus": "Construction",
+        "siteURL": "https://www.podtech.com",
+        "country": "Vietnam"
+      },
+      {
+        "siteId": 62,
+        "name": "TestSite1",
+        "description": null,
+        "city": "Bangalore",
+        "latitude": 45,
+        "longitude": 35,
+        "timeZone": "UTC",
+        "currency": "INR",
+        "siteStatus": "Construction",
+        "siteURL": "https://www.google.com/",
+        "country": "India"
+      }
+    ],
+    "totalCount": 15
+  }
+}

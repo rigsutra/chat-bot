@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    environment:
+      - OLLAMA_NUM_PARALLEL=4
+    # Ensure Ollama is ready before other services start
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+    restart: always
+
+  chatbot:
+    build: ./app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+    depends_on:
+      ollama:
+        condition: service_healthy # Wait for the healthcheck to pass
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    restart: always
+
+  fetcher:
+    build: ./fetcher
+    volumes:
+      - ./data:/data
+    env_file:
+      - .env
+    restart: always
+
+volumes:
+  ollama_models:
