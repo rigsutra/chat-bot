@@ -63,12 +63,29 @@ Data file persisted to: `./data/latest.json` (mounted into both services).
 
 Important `.env` variables for `fetcher` (examples shown in `fetcher/fetcher.py`):
 
-- `LOGIN_URL` — authentication endpoint
-- `USERNAME` — API username
+- `LOGIN_URL` — authentication endpoint (used for automated login)
+- `USERNAME` — API username (required for automated login)
 - `AUTH_TOKEN` — optional pre-created token (if provided, login step is skipped)
-- `SITENAME` — optional
+- `SITENAME` — optional site name sent during login
 
-Create a `.env` in the repo root with the required values before starting the stack.
+Example `.env` file (create at the repository root):
+
+```env
+# fetcher credentials / configuration
+LOGIN_URL=https://example.com/api/login
+USERNAME=your_username_here
+# SITENAME is optional and can be empty
+SITENAME=your_site_name_or_leave_blank
+# If you already have a valid Bearer token, set AUTH_TOKEN and fetcher will skip the login step
+AUTH_TOKEN=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+Notes:
+
+- If `AUTH_TOKEN` is present, the fetcher uses it and skips the login flow. Otherwise the fetcher will POST `USERNAME`/`SITENAME` to `LOGIN_URL` to obtain a token.
+- **Do not commit** your `.env` to version control; add it to `.gitignore`.
+
+Create the `.env` before starting the stack so `fetcher` can read credentials on startup.
 
 ---
 
@@ -136,7 +153,6 @@ curl "http://localhost:8000/ask?query=Show%20dashboard%20summary"
 ```
 
 - Swagger / OpenAPI UI (browser):
-
   - Swagger UI: `http://localhost:8000/docs`
   - Redoc: `http://localhost:8000/redoc`
   - OpenAPI JSON: `http://localhost:8000/openapi.json`
