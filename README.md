@@ -135,6 +135,14 @@ curl http://localhost:8000/
 curl "http://localhost:8000/ask?query=Show%20dashboard%20summary"
 ```
 
+- Swagger / OpenAPI UI (browser):
+
+  - Swagger UI: `http://localhost:8000/docs`
+  - Redoc: `http://localhost:8000/redoc`
+  - OpenAPI JSON: `http://localhost:8000/openapi.json`
+
+  Open the Swagger UI in your browser to explore and test the `/ask` endpoint interactively.
+
 ---
 
 ## File locations
