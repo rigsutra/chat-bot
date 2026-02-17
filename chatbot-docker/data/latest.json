@@ -8,7 +8,7 @@
     "todayLocationCarbonFactor": 2
   },
   "active_sites": {
-    "activeSites": 15
+    "activeSites": 16
   },
   "map": [
     {
@@ -21,9 +21,9 @@
       "siteUrl": "https://sandbox.yondrverse.com/",
       "city": "",
       "maxMw": 200.0,
-      "mwUsage": 34.39,
-      "currentPUE": 5.82,
-      "currentDCIE": 17.2,
+      "mwUsage": 45.73,
+      "currentPUE": 4.37,
+      "currentDCIE": 22.86,
       "currentCarbon": 0.0,
       "power": 0.0,
       "humidity": 93.0,
@@ -334,8 +334,21 @@
         "siteStatus": "Construction",
         "siteURL": "https://www.google.com/",
         "country": "India"
+      },
+      {
+        "siteId": 63,
+        "name": "TEST1A",
+        "description": null,
+        "city": "",
+        "latitude": 18.9213,
+        "longitude": 72.8321,
+        "timeZone": "UTC",
+        "currency": "ARS",
+        "siteStatus": "Operational",
+        "siteURL": "https://global-uat.yondrone.com",
+        "country": null
       }
     ],
-    "totalCount": 15
+    "totalCount": 16
   }
 }
